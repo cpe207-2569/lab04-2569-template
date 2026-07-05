@@ -40,6 +40,7 @@ $ pnpm exec tsc --init
 แก้ไขค่าในไฟล์ `tsconfig.json` ในส่วนของ **`compilerOptions`** ดังต่อไปนี้
 
 ```json
+"module": "commonjs",      // just for lab autograding
 "target": "es2016",        // output script version
 "types": ["node"],
 "removeComments": false,   // remove comments
@@ -61,7 +62,10 @@ $ node <filename.ts>
 
 ```bash
 // ในกรณีที่ติดตั้ง typescript ด้วยคำสั่ง 'npm install -D typescript'
-$ pnpm tsc [filename.ts]
+$ pnpm exec tsc [filename.ts]
+
+// ทำการ compile โค้ด TypeScript ทุกไฟล์
+$ pnpm exec tsc
 ```
 
 แล้วทำการรันไฟล์ JavaScript ด้วยคำสั่ง
