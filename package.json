@@ -1,18 +1,26 @@
 {
-  "name": "lab04",
+  "name": "lab04-template",
   "version": "1.0.0",
   "description": "Basic JS/TS #1",
   "main": "index.js",
-  "devDependencies": {
-    "@babel/core": "*",
-    "@babel/preset-env": "*",
-    "@types/node": "^26.1.0",
-    "babel-jest": "*",
-    "jest": "*"
-  },
   "scripts": {
     "test": "jest"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.10.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "jest": "*",
+  }
 }
