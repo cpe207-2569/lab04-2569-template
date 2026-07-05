@@ -21,6 +21,6 @@
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "babel-jest": "*",
-    "jest": "*",
+    "jest": "*"
   }
 }
