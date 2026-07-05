@@ -1,7 +1,5 @@
 name: Autograding Tests
-'on':
-- push
-- repository_dispatch
+'on': {}
 permissions:
   checks: write
   actions: read
@@ -11,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v6
+      with:
+        version: 11
+        cache: true
     - name: Checkout code
       uses: actions/checkout@v4
     - name: q1
@@ -37,7 +40,7 @@ jobs:
       with:
         test-name: q3
         setup-command: pnpm install
-        command: pnpm test q3
+        command: pnpm test
         timeout: 10
         max-score: 4
     - name: Autograding Reporter
