@@ -1,13 +1,14 @@
 {
-  "name": "lab_02_answers",
+  "name": "lab04",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic JS/TS #1",
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "*",
-    "babel-jest": "*",
     "@babel/preset-env": "*",
-    "jest": "^27.0.6"
+    "@types/node": "^26.1.0",
+    "babel-jest": "*",
+    "jest": "*"
   },
   "scripts": {
     "test": "jest"
