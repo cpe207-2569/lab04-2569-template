@@ -28,7 +28,7 @@ $ pnpm init
 - `nodemon` เพื่อให้สามารถรันโค้ด JavaScript ได้เมื่อไฟล์มีการเปลี่ยนแปลง (optional)
 
 ```bash
-$ npm install -D typescript  @types/node  tsx nodemon
+$ pnpm install -D typescript  @types/node  tsx nodemon
 ```
 
 สร้างไฟล์ `tsconfig.json` เพื่อกำหนดค่าการทำงานให้ **TypeScript** ของโปรเจคนี้ โดยการรันคำสั่งต่อไปนี้ภายในโฟลเดอร์ของโปรเจค
